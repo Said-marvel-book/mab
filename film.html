@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сайт для Малики</title>
+    <link rel="stylesheet" href="css/mainstyle.css">
+</head>
+<body>
+    <style>
+    img{
+        margin: 10px;
+    }</style>
+    <div class="header">
+        <img src="img/holiday.jpg" class="logo" alt="">
+        <div class="menubtnlock">
+            <button class="menubtn" page="index.html">Главная</button>
+            <button class="menubtn" page="congratulations.html">Поздравления</button>
+            <button class="menubtn" page="poems.html">Стихи</button>
+            <button class="menubtn" page="about.html">О сайте</button>
+            <button class="menubtn" page="gallery.html">Галерея</button>
+        </div>
+    </div>
+    <div class="ZATEM">
+        <img src="img/mp.jpg" alt="" id="per" class="films" page="https://www.kinoafisha.info/movies/8356809/">
+        <img src="img/n1.jpg" alt="" class="films" page="https://www.kinoafisha.info/movies/8356658/">
+        <img src="img/trolls.jpg" alt="" class="films"page="https://www.kinoafisha.info/movies/8329930/">
+        <img src="img/wwd.jpg" alt=""class="films"page="https://www.kinoafisha.info/movies/8356135/">
+        <img src="img/vera.jpg" alt=""class="films"page="https://www.kinoafisha.info/movies/8356551/">
+
+    </div>
+<br>
+<script src="js/mainlib.js"></script>
+<script>
+    var films = document.getElementsByClassName("films");
+    for(var i = 0; i < films.length; i++){
+        films[i].addEventListener("click", onpages);
+    }
+</script>
+<div class="footer">
+
+</div>
+<script src="js/mainlib.js"></script>
+</body>
+</html>
